@@ -27,13 +27,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install headless Java runtime
-        run: sudo apt install openjdk-25-jdk-headless
+        run: sudo apt install openjdk-25-jdk-headless tree
       - name: Install Asciidoctor via Ruby gems
         run: sudo gem install asciidoctor asciidoctor-diagram asciidoctor-diagram-plantuml asciidoctor-pdf
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Inspect
+        run: tree .
       - name: Render PDF
         run: asciidoctor-pdf -a allow-uri-read -r asciidoctor-diagram index.adoc --out-file preparelpi701exam.pdf
       - uses: actions/upload-artifact@v4
