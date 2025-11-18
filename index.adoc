@@ -3,7 +3,7 @@ Stefan Sonnenberg-Carstens <stefan.sonnenberg.carstens@gmail.com>
 :version: 0.0.1
 :lang: de
 :title: Linux Professional Institute DevOps Tools Engineer : Vorbereitung auf das Examen 701-100
-:revdate: 2025-11-09
+:revdate: 2025-11-18
 :doctype: book
 :showcomments:
 :gitrepo: https://github.com/pragdevops/pragdevopsbook
@@ -21,15 +21,12 @@ Stefan Sonnenberg-Carstens <stefan.sonnenberg.carstens@gmail.com>
 :toc:
 :toclevels: 3
 :xrefstyle: short
-// ifdef::backend-pdf[]
-// :pdf-theme: chronicles
 :toc-placement: preamble
 :toc: left
 
 include::locale/attributes.adoc[]
 
 Ein Buch über die Prinzipien und Praktiken von DevOps, das sich auf pragmatische Ansätze konzentriert, um die Zusammenarbeit zwischen Entwicklungs- und Betriebsteams zu verbessern und die Effizienz in der Softwarebereitstellung zu steigern.
-
 
 include::chapters/preface.adoc[]
 
