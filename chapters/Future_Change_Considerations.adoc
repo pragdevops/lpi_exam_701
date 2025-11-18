@@ -1,0 +1,7 @@
+== Mögliche Änderungen in der Zukunft
+
+- 701.2: Remove the OpenStack examples and focus on the general features
+
+- 702.2: Reconsider Swarm and potentially increase Kubernetes
+
+- 703.1: Reconsider Vagrant (or its weight)

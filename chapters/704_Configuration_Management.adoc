@@ -1,0 +1,5 @@
+== 704 Konfigurationsverwaltung
+
+=== 704.1 Ansible
+
+=== 704.2 Weiter Werkzeuge für die Konfigurationsverwaltung

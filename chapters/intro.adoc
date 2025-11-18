@@ -1,0 +1,7 @@
+== Einführung
+Das Examen 701-100 des Linux Professional Institues (LPI) testet die typischen Kenntnissen und Fähigkeiten des Kandidaten im Hinblick auf DevOps Praktiken.
+Diesem Buch liegt die aktuelle Spezifikation der Anforderungen in der Version 1.0.0 zugrunde.
+
+=== Das Linux Professional Institute
+
+=== DevOps

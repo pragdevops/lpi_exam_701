@@ -1,0 +1,42 @@
+name: Render Asciidoc sources to PDF and publish as GitHub artefact
+
+on:
+  push:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  deploy:
+    environment:
+      name: preparelpi701exam-production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install headless Java runtime
+        run: sudo apt install openjdk-25-jdk-headless
+      - name: Install Asciidoctor via Ruby gems
+        run: sudo gem install asciidoctor asciidoctor-diagram asciidoctor-diagram-plantuml asciidoctor-pdf
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Render PDF
+        run: asciidoctor-pdf -a allow-uri-read -r asciidoctor-diagram index.adoc --out-file preparelpi701exam.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preparelpi701exam
+          path: preparelpi701exam.pdf 

@@ -1,0 +1,7 @@
+== 703 Bereitstellung von Maschinen
+
+=== 703.1 Bereitstellung von virtuellen Maschinen
+
+=== 703.2 Bereitstellung in der Cloud
+
+=== 703.3 Erstellung von Vorlagen für Maschinen
