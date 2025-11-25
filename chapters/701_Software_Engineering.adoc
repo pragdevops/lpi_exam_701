@@ -1,5 +1,11 @@
 == 701 Software Engineering
 
+Der erste Abschnitt der Anforderungen beschäftigt sich intensiv mit *modernen* Methonden des Software Engineerings.
+Dieser Bereich ist mit 6 gewichtet und in der Beschreibung heißt es:
+
+_Die Kandidaten sollten in der Lage sein, Softwarelösungen zu entwickeln, die für moderne Laufzeitumgebungen geeignet sind. Die Kandidaten sollten verstehen, wie Dienste mit Datenpersistenz, Sitzungen, Statusinformationen, Transaktionen, Parallelität, Sicherheit, Leistung, Verfügbarkeit, Skalierung, Lastenausgleich, Nachrichtenübermittlung, Überwachung und APIs umgehen. Darüber hinaus sollten die Kandidaten die Auswirkungen von Agile und DevOps auf die Softwareentwicklung verstehen._
+
+
 === 701.1 Modernes Software Engineering
 
 === 701.2 Standardkomponenten und Plattformen für Software

@@ -19,14 +19,50 @@ Stefan Sonnenberg-Carstens <stefan.sonnenberg.carstens@gmail.com>
 :listing-caption: Listing
 :sectnums:
 :toc:
-:toclevels: 3
+:toclevels: 3 
 :xrefstyle: short
 :toc-placement: preamble
 :toc: left
+:!chapter-signifier:
+
+[colophon]
+= Colophon
+
+The Asciidoctor Press, Ceres and Denver.
+
+(C) 2020 by The Asciidoctor Press
+
+Published in the Milky Way Galaxy.
+
+This book is designed by Dagger Flush, Denver, Colorado.
+The types are handset Volcano Dust and Papaya, designed by Leeloo.
+Leeloo created the typefaces to soften the bluntness of documentation.
+
+Built with Asciidoctor on Fedora 33.
+
+Printing and binding by Ceres Lithographing, Inc., Ceres, Milky Way.
 
 include::locale/attributes.adoc[]
 
 Ein Buch über die Prinzipien und Praktiken von DevOps, das sich auf pragmatische Ansätze konzentriert, um die Zusammenarbeit zwischen Entwicklungs- und Betriebsteams zu verbessern und die Effizienz in der Softwarebereitstellung zu steigern.
+
+
+[source, python]
+====
+from urllib import request
+from json import loads
+from types import SimpleNamespace
+
+def get_latest_github_release(owner: str, project: str):
+    response = request.urlopen('https://api.github.com/repos/{owner}/{project}/releases/latest'.format(owner=owner,
+project=project))
+    return SimpleNamespace(**loads(response.read()))
+
+
+if __name__ == '__main__':
+    print(get_latest_github_release('microsoft', 'Microsoft365DSC').tag_name)
+
+====
 
 include::chapters/preface.adoc[]
 
@@ -43,6 +79,18 @@ include::chapters/704_Configuration_Management.adoc[]
 include::chapters/705_Service_Operations.adoc[]
 
 include::chapters/Future_Change_Considerations.adoc[]
+
+[glossary]
+== Glossar
+
+CaC:: Configuration as Code
+IaaS:: Infrastructure as a Service
+Iac:: Infrastructure as Code
+PaC:: Policy as Code
+PaaS:: Plattform as a Service
+SaaS:: Software as a Service
+XaC:: Everything as Code
+XaaS:: Everything as a Service
 
 [bibliography]
 = Quellen

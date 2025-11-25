@@ -2,4 +2,10 @@
 
 === 704.1 Ansible
 
-=== 704.2 Weiter Werkzeuge für die Konfigurationsverwaltung
+=== 704.2 Weitere Werkzeuge für die Konfigurationsverwaltung
+
+==== 704.2.1 Terraform und OpenTofu
+
+==== 704.2.2
+
+
